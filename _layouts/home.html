@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign city_grouper = site.data.latest | group_by: 'city' %}
+<div class="list">
+  {% for group in city_grouper %}
+    <h2>{{group.name}}</h2>
+    {% assign type_grouper = group.items | group_by: 'business_type' | sort:'name' %}
+    {% for type in type_grouper %}
+      <div class="type-bg">
+        <span>{{type.name}}</span>
+      </div>
+      
+        {% for b in type.items %}
+          <div class="business_details">
+            <p class="name">{{b.business_name}}</p>
+            <p class="address">{{b.address}}</p>
+          </div>
+        {% endfor %}
+      
+    {% endfor %}
+{% endfor %}
+</div>

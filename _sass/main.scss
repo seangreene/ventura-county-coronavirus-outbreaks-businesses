@@ -1,0 +1,52 @@
+body {
+  font-family: 'Open Sans';  
+}
+a {
+  color: #2196f3;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 45px;
+}
+h4 {
+  color: #424242;
+  font-size: 16px;
+  font-weight: 600;
+}
+blockquote {
+  border-left: #b3e5fc 4px solid;
+  color: #757575;
+  padding: 0 15px;
+}
+.list {
+  h2 {
+    border-bottom: #b3e5fc 4px solid;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 60px;
+    padding-bottom: 5px;
+  }
+  .type-bg {
+    background-color: #b3e5fc;
+    border-radius: 5px;
+    display: inline-block;
+
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    padding: 5px;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0px;
+  }
+  .address {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+}
