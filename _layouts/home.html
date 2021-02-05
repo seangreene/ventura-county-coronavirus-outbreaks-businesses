@@ -7,7 +7,7 @@ layout: default
     <h2>{{group.name}}</h2>
     {% assign type_grouper = group.items | group_by: 'business_type' | sort:'name' %}
     {% for type in type_grouper %}
-      <span>{{type.name}}</span>
+      <p class="type">{{type.name}}</p>
       
         {% for b in type.items %}
           <div class="business_details">
