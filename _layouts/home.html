@@ -13,7 +13,7 @@ layout: default
           <div class="business_details">
             <p class="name">{{b.business_name}}</p>
             <p class="address">{{b.address}}</p>
-            <p class="address">Outbreak date: {{b.date | date: '%B %d, %Y' }}{% assign d = b.date | date: "%-d" %}{% assign m = b.date | date: "%B" %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }}{% when 'September' %}Sept.{% else %}{{ b.date | date: "%b" }}.{% endcase %} {% case d %}{{ d }}{% endcase %}, {{ b.date | date: "%Y" }}
+            <p class="address">Outbreak date: {% assign d = b.date | date: "%-d" %}{% assign m = b.date | date: "%B" %}{% case m %}{% when 'April' or 'May' or 'June' or 'July' %}{{ m }}{% when 'September' %}Sept.{% else %}{{ b.date | date: "%b" }}.{% endcase %} {{ d }}, {{ b.date | date: "%Y" }}
             </p>
           </div>
         {% endfor %}
