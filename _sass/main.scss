@@ -24,7 +24,12 @@ blockquote {
   padding: 0 15px;
 }
 .list {
-
+  .business_details:first-of-type {
+    margin: 0 0 25px 0;
+  }
+  .business_details {
+    margin: 25px 0;
+  }
   h2 {
     font-size: 32px;
     font-weight: bold;
@@ -47,6 +52,6 @@ blockquote {
     color: #757575;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin: 5px 0;
   }
 }
